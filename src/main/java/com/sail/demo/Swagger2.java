@@ -40,7 +40,7 @@ public class Swagger2 {
                 //版本号
                 .version("1.0")
                 //描述
-                .description("API 描述")
+                .description("")
                 .build();
     }
  

@@ -1,0 +1,31 @@
+spring:       
+    # HTTP ENCODING
+    http:
+        encoding.charset: UTF-8
+        encoding.enable: true
+        encoding.force: true
+   
+    datasource:
+        validation-query: SELECT 1
+        test-on-borrow: true
+        
+    mvc:
+        view:
+            prefix: /WEB-INF/jsp/
+            suffix: .jsp  
+logging:
+    pattern:
+        console:"%d - %level - %msg%n"
+#        path: D:\log\
+    file: D:\log\springbootdemo.log       #可以为相对路径或绝对路径
+    level: 
+        com.sail.demo: debug #不同目录下的日志可配置不同级别
+        org.springfromework.web: info
+        org.hibernate: debug
+#以下配置配合log-back.xml实现彩色日志
+#    home: logs   
+#    name: sell
+#    level:
+#        root: info
+#        org.springframework: info
+#        com.sail.demo: debug    
